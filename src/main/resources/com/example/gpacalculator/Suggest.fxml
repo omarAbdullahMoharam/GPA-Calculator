@@ -36,9 +36,9 @@
                      <font>
                         <Font size="24.0" />
                      </font></Label>
-                  <TextField editable="false" layoutX="255.0" layoutY="94.0" prefHeight="48.0" prefWidth="207.0" />
-                  <Button layoutX="313.0" layoutY="400.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="207.0" text="Suggest" />
-                  <TextArea layoutX="31.0" layoutY="150.0" prefHeight="226.0" prefWidth="489.0" text="Type Subjects Here you recommend" />
+                  <TextField editable="false" layoutX="255.0" layoutY="94.0" prefHeight="48.0" prefWidth="207.0" promptText="ID" />
+                  <Button layoutX="313.0" layoutY="400.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="207.0" text="Suggest A Subject" />
+                  <TextArea layoutX="31.0" layoutY="150.0" prefHeight="226.0" prefWidth="489.0" promptText="Enter Subject You Recommend" text="&#10;&#10;&#10;&#10;" />
                   <Button layoutX="31.0" layoutY="400.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="207.0" text="Back" />
                </children>
             </AnchorPane>

@@ -11,9 +11,11 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 //        showGPAScene(stage);
-        showSuggestScene(stage);
+//        showSuggestScene(stage);
 //        showEnrollScene(stage);
 //          showSuggestScene(stage);
+//        showUpdateScene(stage);
+        showDatabaseScene(stage);
     }
 
     public static void main(String[] args) {
@@ -43,6 +45,20 @@ public class HelloApplication extends Application {
 
     private void showSuggestScene(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Suggest.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        stage.setTitle("Welcome");
+        stage.setScene(scene);
+        stage.show();
+    }
+    private void showUpdateScene(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Update.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        stage.setTitle("Welcome");
+        stage.setScene(scene);
+        stage.show();
+    }
+    private void showDatabaseScene(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DatabaseScene.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
         stage.setTitle("Welcome");
         stage.setScene(scene);
