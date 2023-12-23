@@ -10,7 +10,10 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        showEnrollScene(stage);
+//        showGPAScene(stage);
+//        showSuggestScene(stage);
+//        showEnrollScene(stage);
+//          showSuggestScene(stage);
     }
 
     public static void main(String[] args) {
@@ -39,7 +42,6 @@ public class HelloApplication extends Application {
     }
 
     private void showSuggestScene(Stage stage) throws IOException{
-//        Don't Use ,Still Under Development
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Suggest.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
         stage.setTitle("Welcome");
