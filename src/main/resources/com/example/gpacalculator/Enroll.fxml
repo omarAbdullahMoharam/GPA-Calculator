@@ -19,10 +19,10 @@
             </ImageView>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Button layoutX="41.0" layoutY="103.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Student ID" />
-                  <Button layoutX="41.0" layoutY="218.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Course ID" />
+                  <TextField layoutX="43.0" layoutY="103.0" prefHeight="43.0" prefWidth="232.0" promptText="Student ID" />
                   <Button layoutX="41.0" layoutY="329.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Enroll" />
                   <TextField layoutX="369.0" layoutY="381.0" prefHeight="77.0" prefWidth="439.0" text="Confirmation Message" />
+                  <TextField layoutX="41.0" layoutY="218.0" prefHeight="43.0" prefWidth="232.0" promptText="Student ID" />
                </children>
             </AnchorPane>
          </children>
