@@ -30,5 +30,12 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    private void showGPAScene(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("GPA.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        stage.setTitle("Welcome");
+        stage.setScene(scene);
+        stage.show();
+    }
 
 }
