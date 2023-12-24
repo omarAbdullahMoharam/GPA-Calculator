@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
+<<<<<<< HEAD
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpacalculator.HelloApplication">
+=======
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+>>>>>>> af5db47bfae582f252ec99f47c4cdb44fa695504
    <children>
       <StackPane prefHeight="568.0" prefWidth="873.0">
          <children>
@@ -16,26 +21,14 @@
                   <Image url="@../../../images/44.png" />
                </image>
             </ImageView>
-            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Student ID" StackPane.alignment="TOP_LEFT">
-               <StackPane.margin>
-                  <Insets left="20.0" top="90.0" />
-               </StackPane.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Course ID" StackPane.alignment="TOP_LEFT">
-               <StackPane.margin>
-                  <Insets left="20.0" top="354.0" />
-               </StackPane.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Enroll" StackPane.alignment="TOP_LEFT">
-               <StackPane.margin>
-                  <Insets left="20.0" top="200.0" />
-               </StackPane.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="115.0" prefWidth="291.0" text="Confirmation Message" StackPane.alignment="TOP_LEFT">
-               <StackPane.margin>
-                  <Insets left="387.0" top="359.0" />
-               </StackPane.margin>
-            </Button>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="43.0" layoutY="103.0" prefHeight="43.0" prefWidth="232.0" promptText="Student ID" />
+                  <Button styleClass="enrollBtn" layoutX="41.0" layoutY="329.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Enroll" />
+                  <TextField layoutX="369.0" layoutY="381.0" prefHeight="77.0" prefWidth="439.0" text="Confirmation Message" />
+                  <TextField layoutX="41.0" layoutY="218.0" prefHeight="43.0" prefWidth="232.0" promptText="Student ID" />
+               </children>
+            </AnchorPane>
          </children>
       </StackPane>
    </children>

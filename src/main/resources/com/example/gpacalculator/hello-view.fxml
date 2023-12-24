@@ -10,14 +10,15 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpacalculator.HelloApplication">
    <children>
-      <StackPane prefHeight="150.0" prefWidth="200.0">
+      <StackPane prefHeight="537.0" prefWidth="854.0">
          <children>
             <ImageView fitHeight="568.0" fitWidth="873.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/2.png" />
                </image>
             </ImageView>
-            <Button cacheShape="false" mnemonicParsing="false" onAction="#Enroll" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #919191;" text="Enorll A Course" StackPane.alignment="TOP_LEFT">
+
+            <Button fx:id="enrollBtn" cacheShape="false" mnemonicParsing="false" onAction="#Enroll" prefHeight="44.0" prefWidth="185.0" styleClass="enrollBtn" text="Entorll A Course" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="90.0" />
                </StackPane.margin>
@@ -25,7 +26,8 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" onAction="#GPACalculator" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #919191;" text="GPA Calculator" StackPane.alignment="TOP_LEFT">
+
+            <Button fx:id="enrollBtn2" cacheShape="false" mnemonicParsing="false" onAction="#GPACalculator" prefHeight="44.0" prefWidth="185.0" styleClass="enrollBtn" text="GPA Calculator" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="175.0" />
                </StackPane.margin>
@@ -33,7 +35,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" onAction="#Update" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #919191;" text="Insert A Degree" StackPane.alignment="TOP_LEFT">
+            <Button fx:id="enrollBtn3" cacheShape="false" mnemonicParsing="false" onAction="#Update" prefHeight="44.0" prefWidth="185.0" styleClass="enrollBtn" text="Insert A Degree" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="252.0" />
                </StackPane.margin>
@@ -41,7 +43,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" onAction="#Suggest" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #919191;" text="Suggest A Course" StackPane.alignment="TOP_LEFT">
+            <Button fx:id="enrollBtn4" cacheShape="false" mnemonicParsing="false" onAction="#Suggest" prefHeight="44.0" prefWidth="185.0" styleClass="enrollBtn" text="Suggest A Subject" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="330.0" />
                </StackPane.margin>
@@ -49,7 +51,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" onAction="#Help" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #919191;" text="Help" StackPane.alignment="TOP_LEFT">
+            <Button fx:id="enrollBtn5" cacheShape="false" mnemonicParsing="false" onAction="#Help" prefHeight="44.0" prefWidth="250.0" styleClass="enrollBtn " text="Help" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="400.0" />
                </StackPane.margin>

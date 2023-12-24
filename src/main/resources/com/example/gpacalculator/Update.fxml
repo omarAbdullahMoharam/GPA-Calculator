@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="537.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpacalculator.HelloApplication">
+<fx:root prefHeight="537.0" prefWidth="854.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpacalculator.HelloApplication">
    <children>
       <VBox layoutX="126.0" layoutY="112.0" prefHeight="343.0" prefWidth="582.0">
          <children>
@@ -27,8 +27,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="studentIdTextField" layoutX="216.0" layoutY="87.0" onAction="#Update" prefHeight="38.0" prefWidth="165.0" promptText="Student ID" />
-      <Label layoutX="14.0" layoutY="175.0" prefHeight="27.0" prefWidth="165.0" text="Enter Course ID : ">
+      <TextField fx:id="studentIdTextField" layoutX="216.0" layoutY="87.0" onAction="#Update" prefHeight="38.0" prefWidth="165.0" promptText="Student ID" />      <Label layoutX="14.0" layoutY="175.0" prefHeight="27.0" prefWidth="165.0" text="Enter Course ID : ">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -40,6 +39,6 @@
          </font>
       </Label>
       <TextField fx:id="courseMarkTextField" layoutX="216.0" layoutY="262.0" prefHeight="38.0" prefWidth="165.0" promptText="Course Mark" />
-      <Button layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#Update" prefHeight="38.0" prefWidth="165.0" text="Update" />
+      <Button fx:id="Update" layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#Update" prefHeight="38.0" prefWidth="165.0" text="Update" />
    </children>
-</AnchorPane>
+</fx:root>

@@ -1,0 +1,31 @@
+.enrollBtn{
+    -fx-background-color: "#222";
+    -fx-font-size:18;
+    -fx-text-fill: "white";
+    -fx-font-weight:400;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+
+.text-field {
+    -fx-background-color: #fed441;
+    -fx-text-fill: "black";
+    -fx-background-radius: 20;
+    -fx-prompt-text-fill: #333;
+    -fx-padding: 20 15;
+
+    -fx-font-size: 20;
+}
+.enrollBtn2{
+    -fx-background-color: "#222";
+    -fx-font-size:18;
+    -fx-text-fill: "white";
+    -fx-font-weight:400;
+    -fx-background-radius: 20;
+    -fx-padding: 10;
+
+}
+.no-padding{
+    -fx-padding: 10;
+}
