@@ -22,19 +22,19 @@
             <Image url="@../../../images/5.png" />
          </image>
       </ImageView>
-      <Label layoutX="14.0" layoutY="99.0" prefHeight="27.0" prefWidth="165.0" text="Enter Student ID : " textFill="WHITE">
+      <Label layoutX="14.0" layoutY="93.0" prefHeight="27.0" prefWidth="165.0" text="Enter Student ID : " textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="studentIdTextField" layoutX="216.0" layoutY="87.0" prefHeight="38.0" prefWidth="165.0" promptText="Student ID" />
-      <Label layoutX="14.0" layoutY="188.0" prefHeight="27.0" prefWidth="165.0" text="Enter Course ID : ">
+      <TextField fx:id="studentIdTextField" layoutX="216.0" layoutY="87.0" onAction="#Update" prefHeight="38.0" prefWidth="165.0" promptText="Student ID" />
+      <Label layoutX="14.0" layoutY="175.0" prefHeight="27.0" prefWidth="165.0" text="Enter Course ID : ">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <TextField fx:id="courseIdTextField" layoutX="216.0" layoutY="169.0" prefHeight="38.0" prefWidth="165.0" promptText="Course ID" />
-      <Label layoutX="14.0" layoutY="281.0" prefHeight="27.0" prefWidth="174.0" text="Course Mark : ">
+      <Label layoutX="14.0" layoutY="268.0" prefHeight="27.0" prefWidth="174.0" text="Course Mark : ">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

@@ -1,13 +1,11 @@
 package com.example.gpacalculator;
 import javafx.application.Application;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class HelloApplication extends Application {
@@ -21,12 +19,10 @@ public class HelloApplication extends Application {
         newStage.setScene(new Scene(root));
         newStage.setOnCloseRequest(e -> ((Stage) root.getScene().getWindow()).close());
         newStage.show();
-
-        showFirstScene(stage);
-        showEnrollScene(stage);
-        showUpdateScene(stage);
-        showCalculatorScene(stage);
-
+//        showEnrollScene(stage);
+    //       showFirstScene(stage);
+//        showUpdateScene(stage);
+//        showCalculatorScene(stage);
     }   private void showFirstScene(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
@@ -34,6 +30,7 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
+
     private void showEnrollScene(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Enroll.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
@@ -42,19 +39,37 @@ public class HelloApplication extends Application {
         stage.show();
     }
     @FXML
-    void Update(ActionEvent event) throws IOException {
+    void Suggest(ActionEvent event) {
         ///////// API Calling Place
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Update.fxml"));
+
+    }
+    @FXML
+    void Enroll(ActionEvent event) throws IOException {
+        ///////// API Calling Place
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Enroll.fxml"));
         Parent root = loader.load();
         Stage newStage = new Stage();
-        newStage.setTitle("Login");
+        newStage.setTitle("Enrollment");
         newStage.setScene(new Scene(root));
         newStage.setOnCloseRequest(e -> ((Stage) root.getScene().getWindow()).close());
         newStage.show();
     }
+    @FXML
+    void Update(ActionEvent event) throws IOException {
+        ///////// API Calling Place
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Update.fxml"));
+        Parent root = loader.load();
+//        Stage newStage = new Stage();
+//        newStage.setTitle("Login");
+//        newStage.setScene(new Scene(root));
+//        newStage.setOnCloseRequest(e -> ((Stage) root.getScene().getWindow()).close());
+//        newStage
+//        newStage.show();
+    }
     public static void main(String[] args) {
         launch();
     }
+
     private void showUpdateScene(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Update.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
@@ -63,7 +78,6 @@ public class HelloApplication extends Application {
         stage.show();
     }
     private void showCalculatorScene(Stage stage) throws IOException{
-
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("GPACalculator.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
         stage.setTitle("Welcome");
@@ -71,7 +85,7 @@ public class HelloApplication extends Application {
         stage.show();
     }
     @FXML
-    void Calculate(ActionEvent event) throws IOException {
+    void GPACalculator(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("GPACalculator.fxml"));
         Parent root = loader.load();
         Stage newStage = new Stage();
@@ -82,7 +96,11 @@ public class HelloApplication extends Application {
     }
     @FXML
     void Help(ActionEvent event) {
+        ///////// API Calling Place
 
     }
+    public void Calculate(ActionEvent actionEvent) {
+        ///////// API Calling Place
 
+    }
 }
