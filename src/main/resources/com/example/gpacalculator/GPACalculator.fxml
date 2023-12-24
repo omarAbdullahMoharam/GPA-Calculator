@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpacalculator.HelloApplication">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" />
+      <Pane prefHeight="537.0" prefWidth="873.0" />
+      <ImageView fitHeight="537.0" fitWidth="873.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/8.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="103.0" prefHeight="27.0" prefWidth="165.0" text="Enter Student ID : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="GPA" layoutX="208.0" layoutY="264.0" prefHeight="38.0" prefWidth="165.0" promptText="                 GPA">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="Calculate" layoutX="217.0" layoutY="162.0" mnemonicParsing="false" onAction="#Calculate" prefHeight="38.0" prefWidth="159.0" text="Calculate">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="269.0" prefHeight="27.0" prefWidth="165.0" text="Your GPA IS : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="studentId" layoutX="208.0" layoutY="98.0" prefHeight="38.0" prefWidth="165.0" promptText="            Student ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Text fx:id="NeeedHelp" fill="WHITE" layoutX="247.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need Help !" underline="true" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

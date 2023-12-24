@@ -22,7 +22,7 @@
             <Image url="@../../../images/5.png" />
          </image>
       </ImageView>
-      <Label layoutX="14.0" layoutY="93.0" prefHeight="27.0" prefWidth="165.0" text="Enter Student ID : " textFill="WHITE">
+      <Label layoutX="14.0" layoutY="99.0" prefHeight="27.0" prefWidth="165.0" text="Enter Student ID : " textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
