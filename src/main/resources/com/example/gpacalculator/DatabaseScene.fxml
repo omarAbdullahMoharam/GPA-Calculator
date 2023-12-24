@@ -18,7 +18,7 @@
             </ImageView>
             <AnchorPane>
                <children>
-                  <Button layoutX="681.0" layoutY="458.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="173.0" text="Back" />
+                  <Button styleClass="enrollBtn" layoutX="681.0" layoutY="458.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Back" />
                </children>
             </AnchorPane>
          </children>

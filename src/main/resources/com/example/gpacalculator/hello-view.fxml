@@ -16,27 +16,27 @@
                   <Image url="@../../../images/2.png" />
                </image>
             </ImageView>
-            <Button cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Entorll A Course" StackPane.alignment="TOP_LEFT">
+            <Button  styleClass="enrollBtn" fx:id="enrollBtn" cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Entorll A Course" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="90.0" />
                </StackPane.margin>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="GPA Calculator" StackPane.alignment="TOP_LEFT">
+            <Button  styleClass="enrollBtn" fx:id="enrollBtn2" cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="GPA Calculator" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="175.0" />
                </StackPane.margin>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Insert A Degree" StackPane.alignment="TOP_LEFT">
+            <Button  styleClass="enrollBtn" fx:id="enrollBtn3" cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Insert A Degree" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="252.0" />
                </StackPane.margin>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Suggest A Subject" StackPane.alignment="TOP_LEFT">
+            <Button  styleClass="enrollBtn" fx:id="enrollBtn4" cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Suggest A Subject" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="330.0" />
                </StackPane.margin>
             </Button>
-            <Button cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="185.0" text="Help" StackPane.alignment="TOP_LEFT">
+            <Button  styleClass="enrollBtn " fx:id="enrollBtn5" cacheShape="false" mnemonicParsing="false" prefHeight="44.0" prefWidth="250.0" text="Help" StackPane.alignment="TOP_LEFT">
                <StackPane.margin>
                   <Insets left="177.0" top="400.0" />
                </StackPane.margin>
