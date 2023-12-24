@@ -40,6 +40,6 @@
          </font>
       </Label>
       <TextField fx:id="courseMarkTextField" layoutX="216.0" layoutY="262.0" prefHeight="38.0" prefWidth="165.0" promptText="Course Mark" />
-      <Button layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#Update" prefHeight="38.0" prefWidth="165.0" text="Update" />
+      <Button layoutX="216.0" layoutY="351.0" mnemonicParsing="false"  prefHeight="38.0" prefWidth="165.0" text="Update" />
    </children>
 </AnchorPane>

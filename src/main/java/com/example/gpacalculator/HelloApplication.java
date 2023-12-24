@@ -9,10 +9,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
         Parent root = loader.load();
 
@@ -27,9 +29,19 @@ public class HelloApplication extends Application {
         showUpdateScene(stage);
         showCalculatorScene(stage);
 
+//        showGPAScene(stage);
+//        showSuggestScene(stage);
+//        showEnrollScene(stage);
+//          showSuggestScene(stage);
+//        showUpdateScene(stage);
+//        showDatabaseScene(stage);
+    }
+
+
     }   private void showFirstScene(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        scene.getStylesheets().add(Objects.requireNonNull(HelloApplication.class.getResource("/style.css")).toExternalForm());
         stage.setTitle("Welcome");
         stage.setScene(scene);
         stage.show();
@@ -37,6 +49,44 @@ public class HelloApplication extends Application {
     private void showEnrollScene(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Enroll.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        scene.getStylesheets().add(Objects.requireNonNull(HelloApplication.class.getResource("/style.css")).toExternalForm());
+
+        stage.setTitle("Welcome");
+        stage.setScene(scene);
+        stage.show();
+    }
+    private void showGPAScene(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("GPA.fxml"));
+
+        Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        scene.getStylesheets().add(Objects.requireNonNull(HelloApplication.class.getResource("/style.css")).toExternalForm());
+
+        stage.setTitle("Welcome");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    private void showSuggestScene(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Suggest.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        scene.getStylesheets().add(Objects.requireNonNull(HelloApplication.class.getResource("/style.css")).toExternalForm());
+        stage.setTitle("Welcome");
+        stage.setScene(scene);
+        stage.show();
+    }
+    private void showUpdateScene(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Update.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        scene.getStylesheets().add(Objects.requireNonNull(HelloApplication.class.getResource("/style.css")).toExternalForm());
+        stage.setTitle("Welcome");
+        stage.setScene(scene);
+        stage.show();
+    }
+    private void showDatabaseScene(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DatabaseScene.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 873, 540);
+        scene.getStylesheets().add(Objects.requireNonNull(HelloApplication.class.getResource("/style.css")).toExternalForm());
+
         stage.setTitle("Welcome");
         stage.setScene(scene);
         stage.show();
